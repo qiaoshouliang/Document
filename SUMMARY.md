@@ -1,57 +1,43 @@
 # Summary
-
 * [Introduction](README.md)
-
-## Android
-
-* [Android 内存泄漏总结](./Android/Android 内存泄漏总结.md)
-
-* [发布Idea Plugin](./Android/发布Idea Plugin.md)
-
-* [获取WIFI的IP地址](./Android/获取WIFI的IP地址.md)
-
-* [上传库到bintray](./Android/上传库到bintray.md)
-
-* [引用总结](./Android/引用总结.md)
-
-* [自定义 Live Templates](./Android/自定义 Live Templates.md)
-
-* [Android 项目搭建的一些配置](./Android/Android 项目搭建的一些配置.md)
-
-* [Android Handler 避免内存泄露](./Android/Android Handler 避免内存泄露.md)
-
-* [Android Studio gradle plugin 太低的解决方案](./Android/Android Studio gradle plugin 太低的解决方案.md)
-
-* [Editor的使用](./Android/Editor的使用.md)
-
-* [EventBus的使用方式](./Android/EventBus的使用方式.md)
-
-* [idea 插件打印Event log 方法](./Android/idea 插件打印Event log 方法.md)
-
-* [Idea 插件开发常用方法](./Android/Idea 插件开发常用方法.md)
-
-* [idea插件开发](./Android/idea插件开发.md)
-
-* [Kotlin语法](./Android/Kotlin语法.md)
-
-* [run、apply、let、also、with的用法和区别](./Android/run、apply、let、also、with的用法和区别.md)
-
-* [RxJava操作符的使用](./Android/RxJava操作符的使用.md)
-
-* [Selector不起作用的解决方案](./Android/Selector不起作用的解决方案.md)
-
-* [SQLScout的安装方法](./Android/SQLScout的安装方法.md)
-
-
-
-##  Java
-
-
-
-## Tools 
-
-- [Adb 命令](./Tools/adb 命令.md)
-- [Adb 不识别的解决办法](./Tools/Adb 不识别的解决办法.md)
-- [Android Studio 3.0 编译报错的解决办法](./Tools/Android Studio 3.0 编译报错的解决办法.md)
-- [git 命令](./Tools/git 命令)
-- [SVN 提交错误解决办法](./Tools/SVN 提交错误解决办法.md)
+* [Android](./Android/Index.md)
+  * [第三方库](/Android/第三方库/index.md)
+    * [EventBus的使用方式](/Android/第三方库/EventBus的使用方式.md)
+    * [RxJava操作符的使用](/Android/第三方库/RxJava操作符的使用.md)
+    * [SQLScout的安装方法](/Android/第三方库/SQLScout的安装方法.md)
+  * [自定义库](/Android/自定义库/index.md)
+     * [上传库到bintray](/Android/自定义库/上传库到bintray.md)
+  * [Idea插件](/Android/Idea插件/index.md)
+    * [发布Idea Plugin](/Android/Idea插件/发布Idea Plugin.md)
+    * [Editor的使用](/Android/Idea插件/Editor的使用.md)
+  * [idea 插件打印Event log 方法](/Android/Idea插件/idea 插件打印Event log 方法.md)
+  * [Idea 插件开发常用方法](/Android/Idea插件/Idea 插件开发常用方法.md)
+  * [idea插件开发](/Android/Idea插件/idea插件开发.md)
+  * [Kotlin](/Android/Kotlin/index.md)
+    * [Kotlin语法](/Android/Kotlin/Kotlin语法.md)
+    * [run、apply、let、also、with的用法和区别](./Android/Kotlin/run、apply、let、also、with的用法和区别.md)
+  * [Android知识点](/Android/Android知识点/index.md)
+    * [获取WIFI的IP地址](/Android/Android知识点/获取WIFI的IP地址.md)
+    * [引用总结](/Android/Android知识点/引用总结.md)
+    * [自定义 Live Templates](/Android/Android知识点/自定义 Live Templates.md)
+    * [Android 内存泄漏总结](/Android/Android知识点/Android 内存泄漏总结.md)
+    * [Android 项目搭建的一些配置](/Android/Android知识点/Android 项目搭建的一些配置.md)
+    * [Android Handler 避免内存泄露](/Android/Android知识点/Android Handler 避免内存泄露.md)
+    * [Android Studio gradle plugin 太低的解决方案](/Android/Android知识点/Android Studio gradle plugin 太低的解决方案.md)
+    * [Selector不起作用的解决方案](/Android/Android知识点/Selector不起作用的解决方案.md)
+* [Tools](/Tools/Index.md)
+   * [Adb 命令](/Tools/adb 命令.md)
+   * [Adb 不识别的解决办法](/Tools/Adb 不识别的解决办法.md)
+   * [Android Studio 3.0 编译报错的解决办法](/Tools/Android Studio 3.0 编译报错的解决办法.md)
+   * [git 命令](/Tools/git 命令.md)
+   * [SVN 提交错误解决办法](/Tools/SVN 提交错误解决办法.md)
+* [Java](/Java/Index.md)
+   * [查看端口是否占用](/Java/查看端口是否占用.md)
+   * [深入理解Java String及intern](/Java/深入理解Java String及intern.md)
+   * [Java整形值得缓存机制](/Java/Java整形值得缓存机制.md)
+   * [Java值传递和引用传递](/Java/Java值传递和引用传递.md)
+* [Mysql](/Mysql/Index.md)
+   * [高性能MySQL笔记](/Mysql/高性能MySQL笔记.md)
+   * [设置MySql的慢查询](/Mysql/设置MySql的慢查询.md)
+   * [数据库操作工具LitePal的使用说明](/Mysql/数据库操作工具LitePal的使用说明.md)
+   * [MySql的常用命令](/Mysql/MySql的常用命令.md)

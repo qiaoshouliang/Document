@@ -1,0 +1,1441 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>idea插件开发 · Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Josen">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Kotlin/" />
+    
+    
+    <link rel="prev" href="Idea 插件开发常用方法.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"qiaoshouliang/Document","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/qiaoshouliang" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Index.html">
+            
+                <a href="../Index.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第三方库/">
+            
+                <a href="../第三方库/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../第三方库/EventBus的使用方式.html">
+            
+                <a href="../第三方库/EventBus的使用方式.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    EventBus的使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../第三方库/RxJava操作符的使用.html">
+            
+                <a href="../第三方库/RxJava操作符的使用.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    RxJava操作符的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../第三方库/SQLScout的安装方法.html">
+            
+                <a href="../第三方库/SQLScout的安装方法.html">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    SQLScout的安装方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../自定义库/">
+            
+                <a href="../自定义库/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    自定义库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../自定义库/上传库到bintray.html">
+            
+                <a href="../自定义库/上传库到bintray.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    上传库到bintray
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Idea插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="发布Idea Plugin.html">
+            
+                <a href="发布Idea Plugin.html">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    发布Idea Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Editor的使用.html">
+            
+                <a href="Editor的使用.html">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Editor的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="idea 插件打印Event log 方法.html">
+            
+                <a href="idea 插件打印Event log 方法.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    idea 插件打印Event log 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Idea 插件开发常用方法.html">
+            
+                <a href="Idea 插件开发常用方法.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Idea 插件开发常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="idea插件开发.html">
+            
+                <a href="idea插件开发.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    idea插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Kotlin/">
+            
+                <a href="../Kotlin/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Kotlin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../Kotlin/Kotlin语法.html">
+            
+                <a href="../Kotlin/Kotlin语法.html">
+            
+                    
+                        <b>1.2.7.1.</b>
+                    
+                    Kotlin语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../Kotlin/run、apply、let、also、with的用法和区别.html">
+            
+                <a href="../Kotlin/run、apply、let、also、with的用法和区别.html">
+            
+                    
+                        <b>1.2.7.2.</b>
+                    
+                    run、apply、let、also、with的用法和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Android知识点/">
+            
+                <a href="../Android知识点/">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Android知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Android知识点/获取WIFI的IP地址.html">
+            
+                <a href="../Android知识点/获取WIFI的IP地址.html">
+            
+                    
+                        <b>1.2.8.1.</b>
+                    
+                    获取WIFI的IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Android知识点/引用总结.html">
+            
+                <a href="../Android知识点/引用总结.html">
+            
+                    
+                        <b>1.2.8.2.</b>
+                    
+                    引用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Android知识点/自定义 Live Templates.html">
+            
+                <a href="../Android知识点/自定义 Live Templates.html">
+            
+                    
+                        <b>1.2.8.3.</b>
+                    
+                    自定义 Live Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../Android知识点/Android 内存泄漏总结.html">
+            
+                <a href="../Android知识点/Android 内存泄漏总结.html">
+            
+                    
+                        <b>1.2.8.4.</b>
+                    
+                    Android 内存泄漏总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../Android知识点/Android 项目搭建的一些配置.html">
+            
+                <a href="../Android知识点/Android 项目搭建的一些配置.html">
+            
+                    
+                        <b>1.2.8.5.</b>
+                    
+                    Android 项目搭建的一些配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../Android知识点/Android Handler 避免内存泄露.html">
+            
+                <a href="../Android知识点/Android Handler 避免内存泄露.html">
+            
+                    
+                        <b>1.2.8.6.</b>
+                    
+                    Android Handler 避免内存泄露
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../Android知识点/Android Studio gradle plugin 太低的解决方案.html">
+            
+                <a href="../Android知识点/Android Studio gradle plugin 太低的解决方案.html">
+            
+                    
+                        <b>1.2.8.7.</b>
+                    
+                    Android Studio gradle plugin 太低的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../Android知识点/Selector不起作用的解决方案.html">
+            
+                <a href="../Android知识点/Selector不起作用的解决方案.html">
+            
+                    
+                        <b>1.2.8.8.</b>
+                    
+                    Selector不起作用的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Tools/Index.html">
+            
+                <a href="../../Tools/Index.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Tools/adb 命令.html">
+            
+                <a href="../../Tools/adb 命令.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Adb 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Tools/Adb 不识别的解决办法.html">
+            
+                <a href="../../Tools/Adb 不识别的解决办法.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Adb 不识别的解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../Tools/Android Studio 3.0 编译报错的解决办法.html">
+            
+                <a href="../../Tools/Android Studio 3.0 编译报错的解决办法.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Android Studio 3.0 编译报错的解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../Tools/git 命令.html">
+            
+                <a href="../../Tools/git 命令.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../Tools/SVN 提交错误解决办法.html">
+            
+                <a href="../../Tools/SVN 提交错误解决办法.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    SVN 提交错误解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Java/Index.html">
+            
+                <a href="../../Java/Index.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Java/查看端口是否占用.html">
+            
+                <a href="../../Java/查看端口是否占用.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    查看端口是否占用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Java/深入理解Java String及intern.html">
+            
+                <a href="../../Java/深入理解Java String及intern.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    深入理解Java String及intern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Java/Java整形值得缓存机制.html">
+            
+                <a href="../../Java/Java整形值得缓存机制.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Java整形值得缓存机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../Java/Java值传递和引用传递.html">
+            
+                <a href="../../Java/Java值传递和引用传递.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    Java值传递和引用传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Mysql/Index.html">
+            
+                <a href="../../Mysql/Index.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Mysql/高性能MySQL笔记.html">
+            
+                <a href="../../Mysql/高性能MySQL笔记.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    高性能MySQL笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Mysql/设置MySql的慢查询.html">
+            
+                <a href="../../Mysql/设置MySql的慢查询.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    设置MySql的慢查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Mysql/数据库操作工具LitePal的使用说明.html">
+            
+                <a href="../../Mysql/数据库操作工具LitePal的使用说明.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    数据库操作工具LitePal的使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../Mysql/MySql的常用命令.html">
+            
+                <a href="../../Mysql/MySql的常用命令.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    MySql的常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >idea插件开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vfs&#x7B80;&#x4ECB;"><a name="vfs&#x7B80;&#x4ECB;" class="plugin-anchor" href="#vfs&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>VFS&#x7B80;&#x4ECB;</h1>
+<p>&#x865A;&#x62DF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;VFS&#xFF09;&#x662F;&#x4E00;&#x4E2A;Intellij Platform&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x5C01;&#x88C5;&#x4E86;&#x5927;&#x90E8;&#x5206;&#x5BF9;&#x6D3B;&#x52A8;&#x6587;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x64CD;&#x4F5C;&#xFF0C;&#x4E3A;&#x4E86;&#x8FBE;&#x6210;&#x4EE5;&#x4E0B;&#x76EE;&#x7684;&#xFF1A;</p>
+<ul>
+<li>&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x6587;&#x4EF6;&#x7684;&#x901A;&#x7528;API&#xFF0C;&#x800C;&#x4E0D;&#x5173;&#x5FC3;&#x6587;&#x4EF6;&#x7684;&#x5177;&#x4F53;&#x4F4D;&#x7F6E;&#xFF08;&#x65E0;&#x8BBA;&#x6587;&#x4EF6;&#x4F4D;&#x4E8E;&#x78C1;&#x76D8;&#x4E0A;&#x3001;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x8FD8;&#x662F;HTTP&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF09;</li>
+<li>&#x8FFD;&#x8E2A;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x68C0;&#x6D4B;&#x5230;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x66F4;&#x6539;&#x65F6;&#x80FD;&#x63D0;&#x4F9B;&#x65B0;&#x65E7;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;</li>
+<li>&#x5EFA;&#x7ACB;&#x6587;&#x4EF6;&#x5728;VFS&#x548C;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;</li>
+</ul>
+<p>&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x540E;&#x4E24;&#x4E2A;&#x76EE;&#x7684;&#xFF0C;VFS&#x4E3A;&#x7528;&#x6237;&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x5185;&#x5BB9;&#x7BA1;&#x7406;&#x4E86;&#x4E00;&#x4E2A;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5FEB;&#x7167;&#xFF0C;&#x5FEB;&#x7167;&#x53EA;&#x5B58;&#x50A8;&#x90A3;&#x4E9B;&#x901A;&#x8FC7;VFS API&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x548C;&#x88AB;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#x540E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x4E86;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5FEB;&#x7167;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7EA7;&#x522B;&#x800C;&#x4E0D;&#x662F;&#x5DE5;&#x7A0B;&#x7EA7;&#x522B;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x5F15;&#x7528;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x53EA;&#x4F1A;&#x5728;&#x5FEB;&#x7167;&#x4E2D;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x6240;&#x6709;&#x7684;VFS&#x8BBF;&#x95EE;&#x64CD;&#x4F5C;&#x90FD;&#x8981;&#x7ECF;&#x8FC7;&#x5FEB;&#x7167;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x901A;&#x8FC7;VFS API&#x8BBF;&#x95EE;&#x6587;&#x4EF6;&#x65F6;&#x8BE5;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x4E8E;&#x5FEB;&#x7167;&#x4E2D;&#xFF0C;VFS&#x5C06;&#x4ECE;&#x78C1;&#x76D8;&#x4E2D;&#x52A0;&#x8F7D;&#x8BE5;&#x6587;&#x4EF6;&#x5E76;&#x5B58;&#x5165;&#x5FEB;&#x7167;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x5FEB;&#x7167;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x3002;&#x5FEB;&#x7167;&#x4E2D;&#x53EA;&#x5B58;&#x50A8;&#x90A3;&#x4E9B;&#x53EF;&#x88AB;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x5168;&#x90E8;&#x5B58;&#x5165;&#x5FEB;&#x7167;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x4E9B;&#x4E0D;&#x53EF;&#x88AB;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7684;&#x5185;&#x5BB9;&#x4F8B;&#x5982;jar&#x6587;&#x4EF6;&#x7B49;&#xFF0C;VFS&#x53EA;&#x4F1A;&#x5B58;&#x50A8;&#x5B83;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x6587;&#x4EF6;&#x540D;&#x3001;&#x6587;&#x4EF6;&#x5C3A;&#x5BF8;&#x548C;&#x65F6;&#x95F4;&#x6233;&#x7B49;&#x3002;&#x5FEB;&#x7167;&#x8FD9;&#x4E00;&#x7279;&#x6027;&#x610F;&#x5473;&#x7740;IDE&#x4E2D;&#x663E;&#x793A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x548C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x603B;&#x662F;&#x80FD;&#x5339;&#x914D;&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x5B9E;&#x9645;&#x5185;&#x5BB9;&#x3002;&#x5728;IDE&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x8FDB;&#x7A0B;&#x4F1A;&#x4ECE;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x63A5;&#x6536;&#x5230;&#x6587;&#x4EF6;&#x66F4;&#x6539;&#x7684;&#x901A;&#x77E5;&#x5E76;&#x901A;&#x77E5;IDE&#x8FDB;&#x884C;&#x5237;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;&#x5237;&#x65B0;&#x64CD;&#x4F5C;&#x57FA;&#x4E8E;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x88AB;&#x66F4;&#x6539;&#x800C;&#x65F6;&#x95F4;&#x6233;&#x7EF4;&#x6301;&#x4E0D;&#x53D8;&#x7684;&#x8BDD;IDE&#x5C06;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5230;&#x5FEB;&#x7167;&#x3002;</p>
+<h1 id="&#x83B7;&#x53D6;virtualfile"><a name="&#x83B7;&#x53D6;virtualfile" class="plugin-anchor" href="#&#x83B7;&#x53D6;virtualfile"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;VirtualFile</h1>
+<h2 id="&#x4ECE;iofile&#x83B7;&#x53D6;"><a name="&#x4ECE;iofile&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x4ECE;iofile&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;IOFile&#x83B7;&#x53D6;</h2>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;&#x78C1;&#x76D8;&#x4E0A;&#x7684;io.java&#x6587;&#x4EF6;&#xFF0C;&#x8981;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230;VFS&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#x8FDB;&#x884C;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;File&#x5B9E;&#x4F8B;File ioFile = new File(&quot;./io.java&quot;)</li>
+<li>&#x5C06;&#x6587;&#x4EF6;&#x4ECE;&#x78C1;&#x76D8;&#x8F7D;&#x5165;VFSVritualFile virtualFile = LocalFileSystem.getInstance().refreshAndFindFileByIoFile(ioFile)</li>
+<li>&#x5237;&#x65B0;VFSvirtualFile.refresh(false, true)</li>
+</ul>
+<p>&#x5176;&#x4E2D;refresh&#x65B9;&#x6CD5;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5206;&#x522B;&#x4E3A;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x5F02;&#x6B65;&#x5237;&#x65B0;&#x548C;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x9012;&#x5F52;&#x5237;&#x65B0;&#x3002;&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x5373;&#x53EF;&#x83B7;&#x5F97;IOFile&#x5728;VFS&#x4E2D;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;filechooser&#x83B7;&#x53D6;"><a name="&#x4F7F;&#x7528;filechooser&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x4F7F;&#x7528;filechooser&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;FileChooser&#x83B7;&#x53D6;</h2>
+<p>SDK&#x4E2D;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x6587;&#x4EF6;&#x9009;&#x62E9;&#x7EC4;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x6B65;&#x9AA4;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;VirtualFile&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;FileChooserDescriptor&#x5B9E;&#x4F8B;&#xFF0C;FileChooserDescriptor&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x7EC4;&#x5BF9;&#x9700;&#x8981;&#x9009;&#x62E9;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x7684;&#x7279;&#x5F81;&#x63CF;&#x8FF0;</li>
+<li>&#x901A;&#x8FC7;<code>FileChooser.chooseFile()</code>&#x83B7;&#x53D6;VirtualFile&#x5B9E;&#x4F8B;</li>
+</ul>
+<h2 id="&#x4ECE;url&#x83B7;&#x53D6;"><a name="&#x4ECE;url&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x4ECE;url&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;URL&#x83B7;&#x53D6;</h2>
+<p>VirtualFileManager&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;findFileByUrl()&#x548C;refreshAndFindFileByUrl()&#x65B9;&#x6CD5;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;URL&#x83B7;&#x53D6;VirtualFile&#x5B9E;&#x4F8B;</p>
+<h2 id="&#x4ECE;vfs&#x83B7;&#x53D6;"><a name="&#x4ECE;vfs&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x4ECE;vfs&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;VFS&#x83B7;&#x53D6;</h2>
+<p>IDE&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x8BBF;&#x95EE;&#x90FD;&#x8981;&#x901A;&#x8FC7;VFS&#xFF0C;&#x4E0A;&#x8FF0;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x6700;&#x7EC8;&#x90FD;&#x662F;&#x5C06;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;VFS&#x7684;&#x5FEB;&#x7167;&#x4E4B;&#x540E;&#x518D;&#x63D0;&#x4F9B;&#x8BBF;&#x95EE;&#x3002;&#x5F53;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x88AB;&#x5FEB;&#x7167;&#x7BA1;&#x7406;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;FilenameIndex.getFilesByName()&#x83B7;&#x53D6;&#x5230;VirtualFile&#x5B9E;&#x4F8B;&#x3002;</p>
+<h1 id="&#x5199;&#x5165;&#x5185;&#x5BB9;&#x5230;virtualfile"><a name="&#x5199;&#x5165;&#x5185;&#x5BB9;&#x5230;virtualfile" class="plugin-anchor" href="#&#x5199;&#x5165;&#x5185;&#x5BB9;&#x5230;virtualfile"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5199;&#x5165;&#x5185;&#x5BB9;&#x5230;VirtualFile</h1>
+<p>&#x6B63;&#x5982;Android&#x4E0D;&#x5141;&#x8BB8;&#x5728;UI&#x7EBF;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;&#x8017;&#x65F6;&#x64CD;&#x4F5C;&#x4E00;&#x6837;&#xFF0C;Intellij Platform&#x4E5F;&#x4E0D;&#x5141;&#x8BB8;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;&#x5B9E;&#x65F6;&#x7684;&#x6587;&#x4EF6;&#x5199;&#x5165;&#xFF0C;&#x800C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x6765;&#x8FDB;&#x884C;&#x3002;</p>
+<pre><code>ApplicationManager.getApplication().invokeLater(new Runnable() { 
+    @Override
+    public void run() { 
+        new WriteCommandAction(project) {
+            @Override
+            protected void run(@NotNull Result result) throws Throwable {
+            //writing to file
+            } 
+        }.execute();
+    }
+});
+</code></pre><p>&#x4E0A;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;WriteCommandAction&#x4E5F;&#x5E76;&#x4E0D;&#x662F;&#x5B9E;&#x65F6;&#x5199;&#x5165;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;WriteCommandAction&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x5230;&#x67D0;&#x4E00;&#x65F6;&#x95F4;&#x540C;&#x65F6;&#x6267;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x5728;&#x4E00;&#x7EC4;WriteCommandAction&#x4E2D;&#x6709;&#x5BF9;&#x4E0D;&#x540C;&#x6587;&#x4EF6;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x8BE5;&#x6587;&#x4EF6;&#x5728;&#x8FD9;&#x7EC4;&#x64CD;&#x4F5C;&#x4E2D;&#x662F;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x597D;&#x5728;&#x5199;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x524D;&#x5148;&#x5C06;WriteCommandAction&#x4E0E;&#x6587;&#x4EF6;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x3002;</p>
+<p>VFS&#x5C31;&#x4ECB;&#x7ECD;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x4E0B;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;&#x76EE;&#x5F55;&#x3001;&#x4EE3;&#x7801;&#x548C;&#x5176;&#x4ED6;&#x8D44;&#x6E90;&#x6587;&#x4EF6;</p>
+<hr>
+<h1 id="psi&#x7B80;&#x4ECB;"><a name="psi&#x7B80;&#x4ECB;" class="plugin-anchor" href="#psi&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>PSI&#x7B80;&#x4ECB;</h1>
+<p>PSI&#xFF08;Program Structure Interface&#xFF09;&#x662F;Intellij Platform&#x4E2D;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5728;IDE&#x6240;&#x7BA1;&#x7406;&#x7684;Project&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;Package&#xFF0C;&#x6E90;&#x4EE3;&#x7801;&#x548C;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x62BD;&#x8C61;&#x6210;&#x76F8;&#x5E94;&#x7684;PSI&#x5BF9;&#x8C61;&#x3002;&#x672C;&#x6587;&#x5C06;&#x4EE5;PsiDirectory&#x3001;PsiJavaFile&#x548C;XmlFile&#x4E3A;&#x4F8B;&#x4ECB;&#x7ECD;&#x63D2;&#x4EF6;&#x5BF9;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x3001;Java&#x7C7B;&#x548C;DOM&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="&#x901A;&#x7528;&#x65B9;&#x6CD5;"><a name="&#x901A;&#x7528;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x901A;&#x7528;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x7528;&#x65B9;&#x6CD5;</h2>
+<pre><code>FilenameIndex.getFilesByName()//&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x540D;&#x79F0;&#xFF08;&#x4E0D;&#x5305;&#x542B;&#x5177;&#x4F53;&#x8DEF;&#x5F84;&#xFF09;&#x641C;&#x7D22;&#x5BF9;&#x5E94;&#x6587;&#x4EF6;
+ReferencesSearch.search()//&#x7C7B;&#x4F3C;&#x4E8E;IDE&#x4E2D;&#x7684;Find Usages&#x64CD;&#x4F5C;
+RefactoringFactory.createRename()//&#x91CD;&#x547D;&#x540D;
+FileContentUtil.reparseFiles()//&#x901A;&#x8FC7;VirtualFile&#x91CD;&#x5EFA;PSI
+</code></pre><h2 id="java&#x4E13;&#x7528;&#x65B9;&#x6CD5;"><a name="java&#x4E13;&#x7528;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#java&#x4E13;&#x7528;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Java&#x4E13;&#x7528;&#x65B9;&#x6CD5;</h2>
+<pre><code>ClassInheritorsSearch.search()//&#x641C;&#x7D22;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5B50;&#x7C7B;
+JavaPsiFacade.findClass()//&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x67E5;&#x627E;&#x7C7B;
+PsiShortNamesCache.getInstance().getClassesByName()//&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x77ED;&#x540D;&#x79F0;&#xFF08;&#x4F8B;&#x5982;LogUtil&#xFF09;&#x67E5;&#x627E;&#x7C7B;
+PsiClass.getSuperClass()//&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x76F4;&#x63A5;&#x7236;&#x7C7B;
+JavaPsiFacade.getInstance().findPackage()//&#x83B7;&#x53D6;Java&#x7C7B;&#x6240;&#x5728;&#x7684;Package
+OverridingMethodsSearch.search()//&#x67E5;&#x627E;&#x88AB;&#x7279;&#x5B9A;&#x65B9;&#x6CD5;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;
+</code></pre><h2 id="&#x4F7F;&#x7528;psi&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;java&#x7C7B;&#x3002;"><a name="&#x4F7F;&#x7528;psi&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;java&#x7C7B;&#x3002;" class="plugin-anchor" href="#&#x4F7F;&#x7528;psi&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;java&#x7C7B;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;PSI&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Java&#x7C7B;&#x3002;</h2>
+<p>&#x521B;&#x5EFA;&#x76EE;&#x5F55;</p>
+<pre><code>//&#x83B7;&#x53D6;Project&#x6839;&#x76EE;&#x5F55;
+PsiDirectory baseDir = PsiDirectoryFactory.getInstance(project).createDirectory(project.getBaseDir());
+//&#x9012;&#x5F52;&#x67E5;&#x627E;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x76EE;&#x5F55;
+PsiDirectory subDir = baseDir.findSubdirectory(moduleName);
+......
+//&#x5224;&#x65AD;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x76EE;&#x5F55;&#x662F;&#x5426;&#x5DF2;&#x5B58;&#x5728;
+boolean isExist = subDir == null;
+//&#x5982;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x76EE;&#x5F55;
+if(!isExist) {
+subDir = moduleDir.createSubdirectory(moduleName); 
+}
+//&#x521B;&#x5EFA;Java&#x7C7B;
+
+//&#x521B;&#x5EFA;PsiClass
+PsiClass clazz = JavaDirectoryService.getInstance().createClass(subDir, className)
+//&#x6DFB;&#x52A0;package&#x5B57;&#x6BB5;
+((PsiJavaFile) clazz.getContainingFile()).setPackageName(pkgName);
+//package&#x5B57;&#x6BB5;&#x53EF;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x89E3;&#x6790;&#x6216;&#x4F7F;&#x7528;JavaPsiFacade&#x83B7;&#x5F97;&#x3002;&#x6B64;&#x5904;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#x7684;&#x64CD;&#x4F5C;&#x5FC5;&#x987B;&#x5728;WriteCommandAction&#x4E2D;&#x5F02;&#x6B65;&#x8FDB;&#x884C;&#x3002;
+</code></pre><h2 id="&#x64CD;&#x4F5C;dom&#x5BF9;&#x8C61;"><a name="&#x64CD;&#x4F5C;dom&#x5BF9;&#x8C61;" class="plugin-anchor" href="#&#x64CD;&#x4F5C;dom&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x64CD;&#x4F5C;DOM&#x5BF9;&#x8C61;</h2>
+<h3 id="&#x64CD;&#x4F5C;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x5165;&#x7684;dom"><a name="&#x64CD;&#x4F5C;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x5165;&#x7684;dom" class="plugin-anchor" href="#&#x64CD;&#x4F5C;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x5165;&#x7684;dom"><i class="fa fa-link" aria-hidden="true"></i></a>&#x64CD;&#x4F5C;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x5165;&#x7684;DOM</h3>
+<p>&#x83B7;&#x53D6;XmlFile&#x5B9E;&#x4F8B;
+&#x6B64;&#x5904;&#x901A;&#x8FC7;FileChooser&#x5F15;&#x5BFC;&#x7528;&#x6237;&#x4ECE;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x9009;&#x53D6;&#x4E00;&#x4E2A;xml&#x6587;&#x4EF6;</p>
+<pre><code>FileChooserDescriptor descriptor = new FileChooserDescriptor(true, false, false, false, false, false);
+VirtualFile virtualFile = FileChooser.chooseFile(descriptor, project, null);
+if (virtualFile != null) {
+if (!virtualFile.isDirectory() &amp;&amp; virtualFile.getName().endsWith(&quot;xml&quot;)) {
+    xmlFile = (XmlFile) PsiManager.getInstance(project).findFile(virtualFile);
+    }
+}
+//&#x904D;&#x5386;&#x6240;&#x6709;&#x6DF1;&#x5EA6;&#x4E3A;1&#x7684;Tag
+XmlDocument document = xml.getDocument();
+if (document != null) {
+    XmlTag rootTag = document.getRootTag();
+    if (rootTag != null) {
+        XmlTag[] subTags = rootTag.getSubTags();
+        for (XmlTag tag : subTags) {
+        //do something you want
+        }
+    }
+}
+</code></pre><h3 id="&#x751F;&#x6210;xmlfile&#x5E76;&#x5199;&#x5165;&#x6587;&#x4EF6;"><a name="&#x751F;&#x6210;xmlfile&#x5E76;&#x5199;&#x5165;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x751F;&#x6210;xmlfile&#x5E76;&#x5199;&#x5165;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;XmlFile&#x5E76;&#x5199;&#x5165;&#x6587;&#x4EF6;</h3>
+<pre><code>//&#x521B;&#x5EFA;XmlFile
+XmlFile xmlFile = (XmlFile) PsiFileFactory.getInstance(project).createFileFromText(xmlName, StdFileTypes.XML);
+//&#x5411;XmlFile&#x5199;&#x5165;&#x5C5E;&#x6027;
+XmlDocument document = xmlFile.getDocument();
+if (document != null &amp;&amp; document.getRootTag() != null) {
+    XmlTag rootTag = document.getRootTag();
+    rootTag.getAttribute(attrName).setValue(attrValue);//set value for exists attr.      
+    rootTag.setAttribute(name,value);//add a new attr and setting value
+}
+//&#x5199;&#x5165;&#x6587;&#x4EF6;
+//&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x540C;&#x6837;&#x9700;&#x8981;&#x5728;WriteCommandAction&#x4E2D;&#x5F02;&#x6B65;&#x8FDB;&#x884C;&#x3002;&#x5148;&#x5224;&#x65AD;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5DF2;&#x5B58;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5219;&#x6267;&#x884C;&#x5220;&#x9664;
+PsiFile psiFile = directory.findFile(xmlName);
+if (psiFile != null) {
+    psiFile.delete();
+}
+directory.add(file);
+</code></pre><p>PSI&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x5C31;&#x4ECB;&#x7ECD;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x4E0B;&#x7BC7;&#x5C06;&#x4ECB;&#x7ECD;PSI&#x7684;&#x8FDB;&#x9636;&#x7528;&#x6CD5;</p>
+<hr>
+<h1 id="psi&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x7684;&#x8FDB;&#x9636;&#x7528;&#x6CD5;"><a name="psi&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x7684;&#x8FDB;&#x9636;&#x7528;&#x6CD5;" class="plugin-anchor" href="#psi&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x7684;&#x8FDB;&#x9636;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>PSI&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x7684;&#x8FDB;&#x9636;&#x7528;&#x6CD5;</h1>
+<h2 id="&#x4F7F;&#x7528;&#x6A21;&#x677F;"><a name="&#x4F7F;&#x7528;&#x6A21;&#x677F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x6A21;&#x677F;</h2>
+<p>&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x8282;&#x7701;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#xFF0C;&#x5728;IDEA&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Preferences -&gt; Editor -&gt; File and Code Templates&#x6765;&#x67E5;&#x770B;&#x548C;&#x7F16;&#x8F91;&#x5DF2;&#x6709;&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x6216;&#x662F;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x6A21;&#x677F;&#x3002;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;IDE&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E9B;&#x5B8F;&#x53D8;&#x91CF;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x6709;NAME&#x3001;PACKAGE_NAME&#x3001;USER&#x3001;DATE&#x7B49;&#xFF0C;&#x5728;&#x65B0;&#x5EFA;&#x6A21;&#x677F;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x5B8F;&#x53D8;&#x91CF;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5B8F;&#x53D8;&#x91CF;&#x5C06;&#x5728;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x65F6;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#x8BA9;&#x7528;&#x6237;&#x5BF9;&#x5176;&#x8D4B;&#x503C;&#x3002;</p>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5728;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x6A21;&#x677F;&#xFF0C;&#x5C06;&#x516C;&#x5171;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x62BD;&#x79BB;&#xFF0C;&#x51CF;&#x5C11;&#x521B;&#x5EFA;PSI&#x5BF9;&#x8C61;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#xFF0C;&#x4E0B;&#x9762;&#x5C06;&#x4ECB;&#x7ECD;&#x6A21;&#x677F;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;&#x6A21;&#x677F;"><a name="&#x521B;&#x5EFA;&#x6A21;&#x677F;" class="plugin-anchor" href="#&#x521B;&#x5EFA;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x6A21;&#x677F;</h3>
+<p>&#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x5B58;&#x653E;&#x4E8E;&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7684;fileTemplates/internal&#x76EE;&#x5F55;&#x5185;,&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x4EE5;${&#x6A21;&#x677F;&#x552F;&#x4E00;&#x540D;&#x79F0;}.${&#x5BF9;&#x5E94;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;}.ft&#x547D;&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;java&#x7C7B;&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x547D;&#x540D;&#x53EF;&#x80FD;&#x4E3A;myTemplate.java.ft&#xFF0C;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x5185;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B8F;&#x53D8;&#x91CF;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;java&#x7C7B;&#x901A;&#x7528;&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x5305;&#x542B;package&#x5B57;&#x6BB5;&#x548C;&#x7C7B;&#x6CE8;&#x91CA;&#x3002;</p>
+<pre><code>#if (${PACKAGE_NAME} &amp;&amp; ${PACKAGE_NAME} != &quot;&quot;)package ${PACKAGE_NAME};#end
+/**
+* Author: ${USER}
+* Created on ${DATE}
+*/
+public class ${NAME} {        
+}
+</code></pre><h3 id="&#x6CE8;&#x518C;&#x6A21;&#x677F;"><a name="&#x6CE8;&#x518C;&#x6A21;&#x677F;" class="plugin-anchor" href="#&#x6CE8;&#x518C;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x518C;&#x6A21;&#x677F;</h3>
+<p>&#x5728;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x524D;&#x5FC5;&#x987B;&#x5148;&#x5411;&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x6CE8;&#x518C;&#x6539;&#x6A21;&#x677F;&#xFF0C;&#x7F16;&#x8F91;plugin.xml&#x6587;&#x4EF6;&#xFF0C;&#x5728;extensions&#x8282;&#x70B9;&#x52A0;&#x5165;&#x6A21;&#x677F;&#x6CE8;&#x518C;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+    &lt;!-- Add your extensions here --&gt;
+    &lt;internalFileTemplate name=&quot;myTemplates&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>&#x6B64;&#x5904;&#x7684;&#x6A21;&#x677F;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x662F;&#x5728;IDE&#x5185;&#x552F;&#x4E00;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5426;&#x5219;&#x8C03;&#x7528;&#x6A21;&#x677F;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x51B2;&#x7A81;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x6A21;&#x677F;"><a name="&#x4F7F;&#x7528;&#x6A21;&#x677F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x6A21;&#x677F;</h3>
+<p>&#x5728;&#x521B;&#x5EFA;JavaClass&#x65F6;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8BE5;&#x6A21;&#x677F;</p>
+<pre><code>PsiClass clazz = JavaDirectoryService.getInstance().createClass(directory, className, templateName);
+</code></pre><p>&#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x6A21;&#x677F;&#x4F7F;&#x7528;&#x7684;&#x76F8;&#x5173;&#x65B9;&#x6CD5;&#xFF0C;so easy~</p>
+<h2 id="&#x4E3A;psiclass&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;&#x3001;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3001;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;"><a name="&#x4E3A;psiclass&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;&#x3001;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3001;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x4E3A;psiclass&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;&#x3001;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3001;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;PsiClass&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;&#x3001;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3001;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;</h2>
+<p>&#x751F;&#x6210;PsiClass&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x4E00;&#x7CFB;&#x5217;Java&#x7C7B;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x5404;&#x79CD;&#x5185;&#x5BB9;&#x7684;&#x6DFB;&#x52A0;&#x65B9;&#x5F0F;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#x90FD;&#x5FC5;&#x987B;&#x5F02;&#x6B65;&#x8FDB;&#x884C;&#x3002;</p>
+<h3 id="&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;"><a name="&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x7C7B;&#x5BFC;&#x5165;</h3>
+<p>&#x8981;&#x4E3A;PsiClass&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x641C;&#x7D22;&#x5230;&#x8FD9;&#x4E2A;&#x7C7B;&#x5728;&#x54EA;&#xFF0C;&#x600E;&#x4E48;&#x641C;&#x7D22;&#x5462;&#xFF0C;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x66F2;:</p>
+<ul>
+<li>&#x521B;&#x5EFA;SearchScope
+SearchScope&#x662F;&#x4E2A;&#x4EC0;&#x4E48;&#x73A9;&#x610F;&#x5462;&#xFF0C;&#x671B;&#x6587;&#x751F;&#x4E49;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x641C;&#x7D22;&#x8303;&#x56F4;&#x7684;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x628A;&#x641C;&#x7D22;&#x8303;&#x56F4;&#x5B9A;&#x4E49;&#x4E3A;&#x6574;&#x4E2A;Project&#xFF0C;IDE&#x4F1A;&#x641C;&#x7D22;Project&#x5185;&#x6240;&#x6709;&#x7684;&#x7C7B;&#xFF08;&#x5305;&#x62EC;&#x5F15;&#x7528;&#x7684;&#x7C7B;&#x5E93;&#xFF09;&#x6765;&#x5BFB;&#x627E;&#x76EE;&#x6807;&#x3002;</li>
+</ul>
+<pre><code>GlobalSearchScope searchScope = GlobalSearchScope.allScope(project);
+</code></pre><ul>
+<li>&#x521B;&#x5EFA;&#x597D;SearchScope&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x8FDB;&#x884C;&#x641C;&#x7D22;</li>
+</ul>
+<pre><code>PsiClass[] psiClasses = PsiShortNamesCache.getInstance(project).getClassesByName(className, searchScope);
+</code></pre><p>&#x641C;&#x7D22;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;PsiClass&#x6570;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x7C7B;&#x540D;&#x5339;&#x914D;&#x7684;PsiClass&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x8FC7;&#x6EE4;&#x51FA;&#x76EE;&#x6807;&#x7C7B;&#x5E76;&#x751F;&#x6210;import&#xFF0C;&#x540C;&#x6837;&#x662F;&#x4E24;&#x6B65;:</p>
+<ul>
+<li>&#x751F;&#x6210;PsiImportStatement<pre><code>PsiImportStatement importStatement = psiElementFactory.createImportStatement(psiClass);
+</code></pre></li>
+<li>&#x6DFB;&#x52A0;&#x5230;PsiClass<pre><code>((PsiJavaFile) clazz.getContainingFile()).getImportList().add(importStatement)
+</code></pre>&#x9F50;&#x6D3B;&#x513F;~</li>
+</ul>
+<h3 id="&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;"><a name="&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;</h3>
+<p>&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x540C;&#x6837;&#x9700;&#x8981;&#x5148;&#x641C;&#x7D22;&#x63A5;&#x53E3;&#x7C7B;&#xFF0C;&#x641C;&#x7D22;&#x7684;&#x5957;&#x8DEF;&#x8FD8;&#x662F;&#x548C;&#x4E0A;&#x9762;&#x7C7B;&#x5BFC;&#x5165;&#x7684;&#x5957;&#x8DEF;&#x4E00;&#x6837;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4ECE;&#x751F;&#x6210;&#x63A5;&#x53E3;&#x5B57;&#x6BB5;PsiJavaCodeReferenceElement&#x5F00;&#x59CB;</p>
+<ul>
+<li>&#x751F;&#x6210;PsiJavaCodeReferenceElement<pre><code>PsiJavaCodeReferenceElement ref = psiElementFactory.createClassReferenceElement(psiClasses);
+</code></pre></li>
+<li>&#x6DFB;&#x52A0;&#x5230;PsiClass</li>
+</ul>
+<pre><code>clazz.getImplementsList().add(ref);
+</code></pre><p>&#x9700;&#x8981;&#x4E00;&#x63D0;&#x7684;&#x662F;&#x6DFB;&#x52A0;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x63A5;&#x53E3;&#x7C7B;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5BFC;&#x5165;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;Nice~</p>
+<h3 id="&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;"><a name="&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;</h3>
+<p>&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x5F0F;&#x4E3A;PsiClass&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+<ul>
+<li>&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x751F;&#x6210;</li>
+</ul>
+<pre><code>PsiElementFactory factory = JavaPsiFacade.getInstance(project).getElementFactory();
+PsiField field = factory.createFieldFromText(&quot;public int a = 0;&quot;, psiClass);
+</code></pre><p>&#x4F7F;&#x7528;&#x6B64;&#x79CD;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x6210;&#x5458;&#x5FC5;&#x987B;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x6210;&#x5458;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x4FEE;&#x9970;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x81EA;&#x884C;&#x4FDD;&#x8BC1;&#x65E0;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;</p>
+<ul>
+<li>&#x901A;&#x8FC7;Factory&#x751F;&#x6210;</li>
+</ul>
+<pre><code>PsiElementFactory factory = JavaPsiFacade.getInstance(project).getElementFactory();
+PsiField field = factory.createField(&quot;a&quot;,PsiType.INT);
+field.getModifierList().setModifierProperty(PsiModifier.PUBLIC,true);
+</code></pre><p>&#x660E;&#x663E;&#x901A;&#x8FC7;&#x6B64;&#x79CD;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x7684;Field&#x66F4;&#x80FD;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x8D28;&#x91CF;&#xFF0C;&#x4E5F;&#x66F4;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x5BF9;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x7684;&#x7406;&#x5FF5;&#x3002;</p>
+<h3 id="&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"><a name="&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</h3>
+<p>Method&#x540C;&#x6837;&#x6709;&#x901A;&#x8FC7;Text&#x548C;&#x901A;&#x8FC7;Factory&#x751F;&#x6210;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<ul>
+<li>&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x751F;&#x6210;<pre><code>PsiElementFactory factory = JavaPsiFacade.getInstance(project).getElementFactory();
+PsiMethod method = factory.createMethodFromText(&quot;public String toString(){}&quot;,psiClass);
+</code></pre></li>
+<li>&#x901A;&#x8FC7;Factory&#x751F;&#x6210;<pre><code>PsiElementFactory factory = JavaPsiFacade.getInstance(project).getElementFactory();
+PsiMethod method = factory.createField(&quot;getCount&quot;,PsiType.INT);
+</code></pre></li>
+<li>&#x4E3A;Method&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;<pre><code>method.getModifierList().addAnnotation(&quot;Override&quot;)
+</code></pre>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;PsiMethod&#x6DFB;&#x52A0;&#x4FEE;&#x9970;&#x7B26;&#x548C;&#x65B9;&#x6CD5;&#x4F53;&#xFF0C;&#x6DFB;&#x52A0;&#x65B9;&#x5F0F;&#x548C;&#x4E0A;&#x6587;&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x76F8;&#x540C;&#x3002;</li>
+</ul>
+<p>&#x683C;&#x5F0F;&#x5316;&#x4EE3;&#x7801;</p>
+<pre><code>CodeStyleManager.getInstance(project).reformat(psiClass);
+</code></pre><p>&#x5728;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x6253;&#x5F00;</p>
+<pre><code>FileEditorManager.getInstance(project).openTextEditor(new OpenFileDescriptor(project, virtualFile), true);
+</code></pre><p>&#x6CE8;&#x518C;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x6587;&#x4EF6;</p>
+<p>&#x5728;&#x7F16;&#x5199;&#x5904;&#x7406;&#x81EA;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#x6216;IDE&#x672A;&#x652F;&#x6301;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x884C;&#x6CE8;&#x518C;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x5230;IDE&#xFF0C;&#x6B64;&#x5904;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x9610;&#x8FF0;&#x3002;
+SVG&#x662F;&#x57FA;&#x4E8E;XML&#xFF0C;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x4E8C;&#x7EF4;&#x77E2;&#x91CF;&#x56FE;&#x5F62;&#x7684;&#x4E00;&#x79CD;&#x56FE;&#x5F62;&#x683C;&#x5F0F;&#xFF0C;&#x5728;IDE&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x89E3;&#x6790;&#x6807;&#x51C6;DOM&#x7684;&#x65B9;&#x5F0F;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x901A;&#x8FC7;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x6B65;&#x9AA4;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;FileTypeFactory
+&#x6B64;&#x5904;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7EE7;&#x627F;&#x4E86;FileTypeFactory&#x7684;&#x7C7B;</li>
+</ol>
+<pre><code>public class SVGFileTypeFactory extends FileTypeFactory {
+@Override
+public void createFileTypes(FileTypeConsumer fileTypeConsumer) {
+    fileTypeConsumer.consume(XmlFileType.INSTANCE,&quot;svg&quot;);
+    }
+}
+</code></pre><p>2.&#x6CE8;&#x518C;FileTypeFactory
+&#x7F16;&#x8F91;plugin.xml&#x6587;&#x4EF6;&#xFF0C;&#x5728;extensions&#x8282;&#x70B9;&#x52A0;&#x5165;</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;fileTypeFactory implementation=&quot;com.guide.plugin.SVGFileTypeFactory&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#x4E4B;&#x540E;&#x5C31;&#x80FD;&#x5728;IDE&#x4E2D;&#x4F7F;&#x7528;XmlFile&#x6765;&#x63CF;&#x8FF0;SVG&#x6587;&#x4EF6;&#x3002;</p>
+<p>Intellij IDEA &#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7CFB;&#x5217;&#x5230;&#x8FD9;&#x91CC;&#x5C31;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x867D;&#x7136;&#x8FD9;&#x6837;&#x5C5E;&#x4E8E;&#x9ED1;&#x79D1;&#x6280;&#x7684;&#x6587;&#x7AE0;&#x60F3;&#x5FC5;&#x4E5F;&#x4E0D;&#x4F1A;&#x6709;&#x5565;&#x4EBA;&#x770B;&#x3002;</p>
+<h1 id="&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5316;&#x652F;&#x6301;&#x7684;&#x89D2;&#x5EA6;&#x63A2;&#x7A76;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x6280;&#x5DE7;"><a name="&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5316;&#x652F;&#x6301;&#x7684;&#x89D2;&#x5EA6;&#x63A2;&#x7A76;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x6280;&#x5DE7;" class="plugin-anchor" href="#&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5316;&#x652F;&#x6301;&#x7684;&#x89D2;&#x5EA6;&#x63A2;&#x7A76;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5316;&#x652F;&#x6301;&#x7684;&#x89D2;&#x5EA6;&#x63A2;&#x7A76;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x6280;&#x5DE7;</h1>
+<p>&#x8FD9;&#x4E00;&#x4E2A;&#x7CFB;&#x5217;&#x7684;&#x524D;&#x9762;&#x56DB;&#x7BC7;&#x6587;&#x7AE0;&#x5BF9;IntelliJIDEA&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x548C;&#x901A;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x505A;&#x4E86;&#x4ECB;&#x7ECD;&#xFF0C;&#x672C;&#x7BC7;&#x5C06;&#x4F1A;&#x6DF1;&#x5165;&#x4E00;&#x6B65;&#xFF0C;&#x4ECE;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5316;&#x652F;&#x6301;&#x7684;&#x89D2;&#x5EA6;&#x63A2;&#x7A76;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x76F8;&#x5173;&#x6280;&#x5DE7;&#x3002;
+&#x4F9D;&#x636E;Wiki&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x662F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x7684;&#x5F62;&#x5F0F;&#x8BED;&#x8A00;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x88AB;&#x6807;&#x51C6;&#x5316;&#x7684;&#x4EA4;&#x6D41;&#x6280;&#x5DE7;&#xFF0C;&#x7528;&#x6765;&#x5411;&#x8BA1;&#x7B97;&#x673A;&#x53D1;&#x51FA;&#x6307;&#x4EE4;&#x3002;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x63CF;&#x8FF0;&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x8BED;&#x6CD5;&#x53CA;&#x8BED;&#x4E49;&#x3002;&#x8BED;&#x6CD5;&#x662F;&#x8BF4;&#x660E;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x7B26;&#x53F7;&#x6216;&#x6587;&#x5B57;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x8BED;&#x4E49;&#x5219;&#x662F;&#x5BF9;&#x4E8E;&#x7F16;&#x7A0B;&#x7684;&#x89E3;&#x91CA;&#x3002;</p>
+<p>&#x5BF9;&#x8BED;&#x8A00;&#x4E2D;&#x8BED;&#x6CD5;&#x548C;&#x8BED;&#x4E49;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x5C31;&#x662F;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x91CC;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x548C;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#x4EC5;&#x4F1A;&#x7B80;&#x7565;&#x4ECB;&#x7ECD;&#x9488;&#x5BF9;&#x4E8E;&#x5B8C;&#x5168;&#x672A;&#x77E5;&#x7684;&#x8BED;&#x8A00;&#x7C7B;&#x578B;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x800C;&#x5C06;&#x66F4;&#x591A;&#x7684;&#x91CD;&#x70B9;&#x653E;&#x5728;&#x5BF9;&#x5DF2;&#x6709;&#x8BED;&#x8A00;&#x7C7B;&#x578B;&#x7684;&#x7EE7;&#x627F;&#x548C;&#x6269;&#x5C55;&#x652F;&#x6301;&#x4E0A;&#x3002;
+&#x9488;&#x5BF9;&#x4E8E;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x63A8;&#x8350;&#x4E00;&#x4E2A;&#x5341;&#x5206;&#x6709;&#x7528;&#x7684;&#x63D2;&#x4EF6;PsiViewer&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x5728;IDE&#x5185;&#x67E5;&#x770B;&#x7F16;&#x8F91;&#x5668;&#x5185;&#x7684;&#x5185;&#x5BB9;&#x6240;&#x5BF9;&#x5E94;&#x7684;PsiElement&#x7C7B;&#x578B;&#xFF0C;&#x7701;&#x53BB;&#x4E86;&#x5F88;&#x591A;&#x67E5;&#x627E;&#x6587;&#x6863;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x672A;&#x77E5;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x8A00;</p>
+<p>&#x5B9A;&#x4E49;&#x57FA;&#x7840;&#x8BED;&#x8A00;&#x63CF;&#x8FF0;</p>
+<p>IDE&#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x4EC5;&#x901A;&#x8FC7;&#x6269;&#x5C55;&#x540D;&#x5C31;&#x80FD;&#x8BC6;&#x522B;&#x51FA;&#x6E90;&#x6587;&#x4EF6;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x5C31;&#x662F;&#x56E0;&#x4E3A;IDE&#x5185;&#x5B9A;&#x4E49;&#x7684;Language&#x548C;FileType&#x4E3A;&#x5176;&#x63D0;&#x4F9B;&#x4E86;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;Language</p>
+<p>&#x7B80;&#x5355;&#x7EE7;&#x627F;Language&#x7C7B;&#xFF0C;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F20;&#x5165;&#x8BED;&#x8A00;ID&#x548C;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x7C7B;&#x578B;</p>
+<p>&#x7EE7;&#x627F;LanguageFileType&#x7C7B;&#xFF0C;&#x5728;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x5206;&#x522B;&#x8FD4;&#x56DE;&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x3001;&#x63CF;&#x8FF0;&#x3001;&#x9ED8;&#x8BA4;&#x6269;&#x5C55;&#x540D;&#x548C;Icon&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;FlieTypeFactory</p>
+<p>&#x7EE7;&#x627F;FileTypeFactory&#x7C7B;&#xFF0C;&#x5728;createFileTypes&#x65B9;&#x6CD5;&#x4E2D;&#x6CE8;&#x518C;&#x8BED;&#x8A00;&#xFF0C;&#x5E76;&#x5728;plugin.xml&#x7684;extensions&#x8282;&#x70B9;&#x4E2D;&#x901A;&#x8FC7;fileTypeFactory&#x6807;&#x7B7E;&#x6CE8;&#x518C;Factory&#x3002;</p>
+<p>&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x51E0;&#x6B65;&#x540E;IDE&#x4FBF;&#x80FD;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x8BC6;&#x522B;&#x51FA;&#x6E90;&#x6587;&#x4EF6;&#x5E76;&#x4E3A;&#x5176;&#x5E94;&#x7528;&#x56FE;&#x6807;&#x3002;</p>
+<p>&#x5B9A;&#x4E8E;&#x8BCD;&#x6CD5;&#x548C;&#x8BED;&#x6CD5;&#x89C4;&#x8303;</p>
+<p>&#x5B9A;&#x4E49;Token&#x548C;Element</p>
+<p>&#x6B64;&#x5904;&#x5B9A;&#x4E49;&#x7684;Token&#x548C;Element&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4E8E;&#x540E;&#x7EED;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x4E2D;&#x7684;Token&#x548C;IDE&#x5185;&#x90E8;&#x8868;&#x793A;&#x7684;PsiElement&#xFF0C;&#x7EE7;&#x627F;IElementType&#xFF0C;&#x5B8C;&#x6210;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x8BED;&#x6CD5;</p>
+<p>IDEA&#x652F;&#x6301;&#x901A;&#x8FC7;BNF&#x8303;&#x5F0F;&#x6765;&#x5B9A;&#x4E49;&#x8BED;&#x6CD5;&#xFF0C;&#x6309;&#x7167;&#x89C4;&#x5219;&#x7F16;&#x5199;&#x4E00;&#x4E2A;bnf&#x6587;&#x4EF6;&#xFF0C;&#x5F53;&#x8BED;&#x6CD5;&#x88AB;&#x5B9A;&#x4E49;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;IDE&#x751F;&#x6210;PsiElement&#x5B9A;&#x4E49;&#x548C;PSI Parser&#x3002;</p>
+<p>&#x5B9A;&#x4E49;Lexer</p>
+<p>&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x5206;&#x89E3;&#x4E3A;Token&#x7684;&#xFF0C;&#x521B;&#x5EFA;Lexer&#x7684;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;JFlex&#x3002;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;lexer&#x89C4;&#x5219;&#x6587;&#x4EF6;&#x7136;&#x540E;&#x901A;&#x8FC7;IDE&#x5373;&#x53EF;&#x751F;&#x6210;Lexer&#x3002;
+&#x5B9E;&#x73B0;ParserDefinition&#x63A5;&#x53E3;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Parser&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x5728;plugin.xml&#x4E2D;&#x7684;extensions&#x8282;&#x70B9;&#x4E2D;&#x4F7F;&#x7528;lang.parserDefinition&#x6807;&#x7B7E;&#x6CE8;&#x518C;&#x8BE5;parser&#x3002;</p>
+<p>&#x4EE5;&#x4E0A;&#x4FBF;&#x662F;&#x4E3A;&#x8BED;&#x8A00;&#x505A;&#x6700;&#x57FA;&#x7840;&#x652F;&#x6301;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x5B8C;&#x6210;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x548C;&#x8BED;&#x6CD5;&#x3001;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x6CE8;&#x518C;&#x540E;&#xFF0C;IDE&#x4FBF;&#x80FD;&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x6587;&#x4EF6;&#x8BC6;&#x522B;&#x3001;&#x5173;&#x952E;&#x5B57;&#x68C0;&#x67E5;&#x548C;&#x8BED;&#x6CD5;&#x68C0;&#x67E5;&#x7B49;&#x652F;&#x6301;&#x3002;&#x4E0B;&#x9762;&#x7ED3;&#x5408;&#x5BF9;weex-language-support&#x63D2;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#xFF0C;&#x4ECB;&#x7ECD;&#x5BF9;&#x6269;&#x5C55;&#x4E86;html&#x8BED;&#x6CD5;&#x7684;weex&#x811A;&#x672C;&#x6240;&#x505A;&#x7684;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x3001;&#x81EA;&#x52A8;&#x63D0;&#x793A;&#x3001;Lint&#x7B49;&#x5176;&#x5B83;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x652F;&#x6301;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>weex&#x8BED;&#x8A00;&#x652F;&#x6301;</p>
+<p>&#x8BC6;&#x522B;weex&#x811A;&#x672C;</p>
+<p>&#x7531;&#x4E8E;weex&#x811A;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x6784;&#x548C;html&#x7C7B;&#x4F3C;&#xFF0C;&#x5747;&#x5305;&#x62EC;<script>、<style>标签和模板部分，所以我们的Language选择直接继承HTMLLanguage</p>
+<pre><code>public class WeexFileType extends LanguageFileType {
+    public static final WeexFileType INSTANCE = new WeexFileType();
+    private WeexFileType() {
+        super(HTMLLanguage.INSTANCE);
+    }
+//…………
+}
+定义完FileType之后，还需要实现一个对应的FileTypeFactory：
+
+public class WeexFileTypeFactory extends FileTypeFactory {
+    @Override
+    public void createFileTypes(@NotNull FileTypeConsumer fileTypeConsumer) {
+        fileTypeConsumer.consume(WeexFileType.INSTANCE);
+    }
+}
+</code></pre><p>最后在plugin.xml内注册</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;fileTypeFactory implementation=&quot;com.taobao.weex.WeexFileTypeFactory&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>完成这一步之后，IDE便能正确将以we作为扩展名的文件识别为weex文件，因为继承了HTMLLanguage，html语言原有的js和css的自动补全和lint规则也将被一并继承过来。</p>
+<p>支持Weex DSL</p>
+<p>weex定义了一系列的DSL规则，包括自定义标签、自定义标签属性和数据绑定支持等，接下来我们一步步对这些特性进行支持</p>
+<p>自定义标签支持</p>
+<p>要让IDE能正确识别自定义的标签（如<list>、<slider>等）并对其应用正确的补全和lint规则，我们需要实现自定义的XmlTagNameProvider和XmlElementDescriptorProvider，其中XmlTagNameProvider定义了所能提供的标签的列表，XmlElementDescriptorProvider定义了每个标签的详情。
+定义一个WeexTagNameProvider，实现XmlTagNameProvider和XmlElementDescriptorProvider接口：</p>
+<pre><code>XmlTagNameProvider
+
+    @Override
+public void addTagNameVariants(List&lt;LookupElement&gt; list, @NotNull XmlTag xmlTag, String prefix) {
+if (!(xmlTag instanceof HtmlTag)) {
+return;
+}
+Set&lt;String&gt; tags = getWeexTagNames();
+for (String s : tags) {
+LookupElement element = LookupElementBuilder
+.create(s)
+.withInsertHandler(XmlTagInsertHandler.INSTANCE)
+.withBoldness(true)
+.withIcon(WeexIcons.TYPE)
+.withTypeText(&quot;weex component&quot;);
+list.add(element);
+}
+</code></pre><p>如此在输入标签的时候IDE就能将weex标签加入自动补全列表中。</p>
+<pre><code>XmlElementDescriptorProvider
+
+    @Nullable
+@Override
+public XmlElementDescriptor getDescriptor(XmlTag xmlTag) {
+PsiFile declare = getDeclare(xmlTag);
+return new WeexTagDescriptor(xmlTag.getName(), declare);
+}
+</code></pre><p>此处的关键是如何将XmlTag与它的声明文件即PsiFile关联起来，此处的桥梁就是XmlElementDescriptor。创建一个实现了XmlElementDescriptor的类，在getDeclaration()方法中返回PsiFile对象，如此便能在执行Open Declaeation的时候跳转到该tag的声明文件内。
+在某些时候，我们的声明文件可能并不是位于某个确定位置的目录内，而是处于归档文件中，此处演示如何从一个jar归档中获取PsiFile的引用：</p>
+<pre><code>public void findPsiFileFromJar(String jarPath, String targetName) {
+VirtualFile vf = JarFileSystem.getInstance().findLocalVirtualFileByPath(jarPath);
+VirtualFile target = vf.findChild(targetName);
+PsiFile declare = PsiManager.getInstance(ProjectUtil.guessProjectForFile(target)).findFile(target);
+}
+</code></pre><p>最后，为了应用上述实现的功能，需要在plugin.xml中进行注册：</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;xml.tagNameProvider implementation=&quot;com.taobao.weex.tags.WeexTagNameProvider&quot;/&gt;
+&lt;xml.elementDescriptorProvider implementation=&quot;com.taobao.weex.tags.WeexTagNameProvider&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>自定义标签属性支持</p>
+<p>按照上面的套路，大家肯定能想到标签属性也是有相应的Provider支持的，它就是XmlAttributeDescriptorsProvider，创建相应的实现类，实现以下方法：</p>
+<p>getAttributeDescriptors(XmlTag xmlTag)</p>
+<p>该方法需要返回XmlTag对应的所有属性的Descriptor列表</p>
+<p>getAttributeDescriptor(String s, XmlTag xmlTag)</p>
+<p>该方法返回名为s的XmlTag所对应的单个Descriptor</p>
+<p>此处的Descriptor为XmlAttributeDescriptor实例，描述了每个标签属性的信息，创建实现类，实现以下关键方法：</p>
+<p>getName()</p>
+<p>返回要匹配的属性名称</p>
+<p>isEnumerated()</p>
+<p>判断属性值是否是枚举属性</p>
+<p>getEnumeratedValues()</p>
+<p>如果属性值是可枚举的，此处返回所有可能的属性值</p>
+<p>同样地，最后需要在plugin.xml中进行注册：</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;xml.attributeDescriptorsProvider implementation=&quot;com.taobao.weex.attributes.WeexAttrDescriptorProvider&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>自动补全支持</p>
+<p>事实上上文所述的标签支持和标签属性支持已经为IDE提供了部分补全所需的支持，例如在输入标签名称和标签属性名时，IDE已经能根据我们提供的Provider和Descriptor提供一些上下文无关的补全提示，接下来我们来提供与上下文相关的补全支持。
+Weex使用双大括号的方式来绑定script中声明的变量，所以我们需要先对script进行分析，得到其中声明的所有变量的函数。此处暂且不对分析JavaScript语言结构进行深入解读，后续有时间单独作文。
+需要补充的一点是，为了让插件支持html语法，需要在plugin.xml中声明对语言模块的依赖：</p>
+<pre><code>&lt;depends&gt;com.intellij.modules.xml&lt;/depends&gt;
+&lt;depends&gt;com.intellij.modules.lang&lt;/depends&gt;
+&lt;depends&gt;JavaScript&lt;/depends&gt;
+</code></pre><p>并不是所有IDE都包含JavaScript模块，本插件开发过程中选择IDEA 15作为SDK，并手动将/Applications/IntelliJ IDEA 15.app/Contents/plugins/JavaScriptLanguage目录下的jar文件添加到Project Structure的Classpath中。
+言归正传，下面开始介绍如何对标签属性值进行自动补全支持。事实上很简单：一个关键的类CompletionContributor
+创建一个继承了CompletionContributor的类，在构造函数中调用extend()方法添加补全的相关逻辑：
+extend(@Nullable CompletionType type, @NotNull ElementPattern&lt;? extends PsiElement&gt; place, CompletionProvider provider)</p>
+<p>CompleteType
+定义补全类型，此处传入CompletionType.BASIC即可。
+ElementPattern
+定义补全操作需要匹配的目标Element类型，简单来说就是指定在何处该出发自动补全，此处可传入PlatformPatterns.psiElement(XmlAttributeValue.class)，表示在键入标签属性值时触发补全逻辑。
+CompletionProvider
+补全逻辑真正的Provider。</p>
+<p>创建我们自己的CompletionProvider，实现addCompletions方法：</p>
+<pre><code>protected void addCompletions(@NotNull CompletionParameters completionParameters, ProcessingContext processingContext, @NotNull CompletionResultSet resultSet) {
+if (completionParameters.getPosition().getContext() instanceof XmlAttributeValue) {
+final XmlAttributeValue value = (XmlAttributeValue) completionParameters.getPosition().getContext();
+for (String s : getCandidateValues(value)) {
+resultSet.addElement(LookupElementBuilder.create(&quot;{{&quot; + s + &quot;}}&quot;)
+.withLookupString(s) //匹配查找的字符串
+.withIcon(WeexIcons.TYPE) //候选列表中显示的icon
+.withInsertHandler(new InsertHandler&lt;LookupElement&gt;() {
+@Override
+public void handleInsert(InsertionContext insertionContext, LookupElement lookupElement) {
+performInsert(value, insertionContext, lookupElement);
+}
+}) // 插入补全内容时的Handler
+.withBoldness(true) //加粗
+}
+}
+}
+</code></pre><p>如此就可以在输入标签属性值的时候触发补全逻辑，此处的难点在于如何从js中分析出函数和变量名，并分析出变量的类型和标签属性值的类型是否匹配，处于篇幅限制并未详细解释，如果想了解可以查看weex-language-support的源码或向我咨询。
+最后，在plugin.xml中进行注册：</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;completion.contributor language=&quot;HTML&quot; implementationClass=&quot;com.taobao.weex.complection.WeexCompletionContributor&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><p>CompletionContributor不能支持情况下的补全</p>
+<p>在编写weex插件的过程中，发现CompletionContributor并不能在键入标签内容时触发补全（即<text></text>的情况），为了支持该种情况下的补全，我们想到了一个tricky的办法：Intention
+IDEA可以帮助你处理一些代码中可能导致错误的情况，当分析出可能存在问题时，IDEA为提供一个Intention列表，包含一些建议实施的修复或改进的行为。在OSX上，默认可以通过Command + Enter触发Intention。
+创建一个PsiElementBaseIntentionAction，实现以下关键方法：
+isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element)
+判断当前活动的Element（光标所在Element）处是否可以激活Intention，其中project、editor参数为当前的Project和当前活动的编辑器对象。
+invoke(@NotNull final Project project, final Editor editor, @NotNull PsiElement element)
+用户触发Intention后需要需要执行的逻辑</p>
+<p>在此处我们依旧获取了js中导出的所有变量，并创建了一个多级下拉框来供用户选择需要插入的变量值。顺带稍微介绍一下IDEA内置的一系列魔改Swing控件，这些控件大部分以JB开头，例如JBTable，JBColor等，编写插件时使用这些控件能保持与IDE一致的外观风格，让插件没有违和感。此处我们使用ListPopup控件来实现选择列表，通过JBPopupFactory.getInstance().createListPopup可以获得相应的ListPopup实例，并且可以调用ListPopop#showInBestPositionFor方法让ListPopup显示在屏幕上最恰当的位置（光标附近）。
+还是一样的步骤，往plugin.xml中注册Intention：</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;intentionAction&gt;
+&lt;className&gt;com.taobao.weex.intention.TagTextIntention&lt;/className&gt;
+&lt;category&gt;Weex&lt;/category&gt;
+&lt;descriptionDirectoryName&gt;WeexTagTextCompletion&lt;/descriptionDirectoryName&gt;
+&lt;/intentionAction&gt;
+&lt;/extensions&gt;
+</code></pre><p>Lint</p>
+<p>Lint是IDE所必须具备的另一项能力，在代码编写阶段，通过分析上下文，找出可能存在的错误或可改进的写法，对用户进行提示，在IDE中，我们熟悉的红色错误下划线，黄色警告下划线都是由Annotator来实现的。创建Annotator的实例，实现annotate方法</p>
+<pre><code>annotate(@NotNull PsiElement psiElement, @NotNull AnnotationHolder annotationHolder)
+</code></pre><p>其中psiElement是等待进行检查的元素</p>
+<p>创建Annotation</p>
+<p>Annotation分为Error、Warning、WeakWarning、Info几个级别，对应编辑器中呈现出的各种不同的下划线颜色。使用AnnotationHolder#createXXXAnnotation方法可以创建一个Annotation实例。</p>
+<p>附加QuickFix</p>
+<p>如上文所述，IDE可以提供一个Intention列表来提供一些建议执行的修复或优化行为，在Annotation中可以通过registerFix()方法来附加一个修复动作。</p>
+<p>Find Usages</p>
+<p>终于快要写完了……
+查找某个变量在工程中的引用是对这个变量执行重构的前提，插件中通过PsiReferenceContributor和PsiReference为引用分析提供支持。
+创建一个继承了PsiReferenceContributor的实例，在registerReferenceProviders方法中处理引用查找。</p>
+<pre><code>@Override
+public void registerReferenceProviders(@NotNull PsiReferenceRegistrar psiReferenceRegistrar) {
+psiReferenceRegistrar.registerReferenceProvider(
+XmlPatterns.xmlTag().withLanguage(HTMLLanguage.INSTANCE)
+.andNot(XmlPatterns.xmlTag().withLocalName(&quot;script&quot;)) //仅在&lt;template&gt;标签内查找
+.andNot(XmlPatterns.xmlTag().withLocalName(&quot;style&quot;)),
+new PsiReferenceProvider() {
+@NotNull
+@Override
+public PsiReference[] getReferencesByElement(@NotNull PsiElement psiElement, @NotNull ProcessingContext processingContext) {
+if (psiElement instanceof XmlTag) {
+if (((XmlTag) psiElement).getSubTags().length == 0) {
+String text = ((XmlTag) psiElement).getValue().getText();
+if (WeexFileUtil.containsMustacheValue(text)) {
+List&lt;PsiReference&gt; references = new ArrayList&lt;PsiReference&gt;();
+Map&lt;String, TextRange&gt; vars = WeexFileUtil.getVars(text);
+for (Map.Entry&lt;String, TextRange&gt; entry : vars.entrySet()) {
+if (WeexFileUtil.getAllVarNames(psiElement).keySet().contains(entry.getKey())) {
+references.add(new DataReference((XmlTag) psiElement, entry.getValue(), entry.getKey()));
+}
+}
+return references.toArray(new PsiReference[references.size()]);
+}
+}
+}
+return new PsiReference[0];
+}
+}
+);
+}
+</code></pre><p>最后在plugin.xml中注册：</p>
+<pre><code>&lt;extensions defaultExtensionNs=&quot;com.intellij&quot;&gt;
+&lt;psi.referenceContributor implementation=&quot;com.taobao.weex.refrences.WeexReferenceContributor&quot;/&gt;
+&lt;/extensions&gt;
+</code></pre><footer class="page-footer"><span class="copyright">Copyright © josen 2017 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2017-11-13 09:33:27
+</span></footer>
+
+
+<script type="text/javascript">var className='atoc';</script></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Idea 插件开发常用方法.html" class="navigation navigation-prev " aria-label="Previous page: Idea 插件开发常用方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Kotlin/" class="navigation navigation-next " aria-label="Next page: Kotlin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"idea插件开发","level":"1.2.6","depth":2,"next":{"title":"Kotlin","level":"1.2.7","depth":2,"path":"Android/Kotlin/index.md","ref":"Android/Kotlin/index.md","articles":[{"title":"Kotlin语法","level":"1.2.7.1","depth":3,"path":"Android/Kotlin/Kotlin语法.md","ref":"Android/Kotlin/Kotlin语法.md","articles":[]},{"title":"run、apply、let、also、with的用法和区别","level":"1.2.7.2","depth":3,"path":"Android/Kotlin/run、apply、let、also、with的用法和区别.md","ref":"./Android/Kotlin/run、apply、let、also、with的用法和区别.md","articles":[]}]},"previous":{"title":"Idea 插件开发常用方法","level":"1.2.5","depth":2,"path":"Android/Idea插件/Idea 插件开发常用方法.md","ref":"Android/Idea插件/Idea 插件开发常用方法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2","atoc","toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © josen 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/qiaoshouliang/Document"},"atoc":{"addClass":true,"className":"atoc"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"qiaoshouliang/Document","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiaoshouliang/Document/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"Josen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Document","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://github.com/qiaoshouliang"}},"gitbook":"3.2.3","description":"记录自己的IT之旅"},"file":{"path":"Android/Idea插件/idea插件开发.md","mtime":"2017-11-13T01:33:27.398Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-13T06:14:59.170Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

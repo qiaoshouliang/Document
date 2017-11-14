@@ -1,0 +1,1030 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>idea 插件打印Event log 方法 · Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Josen">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Idea 插件开发常用方法.html" />
+    
+    
+    <link rel="prev" href="Editor的使用.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"qiaoshouliang/Document","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/qiaoshouliang" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Index.html">
+            
+                <a href="../Index.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第三方库/">
+            
+                <a href="../第三方库/">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../第三方库/EventBus的使用方式.html">
+            
+                <a href="../第三方库/EventBus的使用方式.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    EventBus的使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../第三方库/RxJava操作符的使用.html">
+            
+                <a href="../第三方库/RxJava操作符的使用.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    RxJava操作符的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../第三方库/SQLScout的安装方法.html">
+            
+                <a href="../第三方库/SQLScout的安装方法.html">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    SQLScout的安装方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../自定义库/">
+            
+                <a href="../自定义库/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    自定义库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../自定义库/上传库到bintray.html">
+            
+                <a href="../自定义库/上传库到bintray.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    上传库到bintray
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Idea插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="发布Idea Plugin.html">
+            
+                <a href="发布Idea Plugin.html">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    发布Idea Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Editor的使用.html">
+            
+                <a href="Editor的使用.html">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    Editor的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="idea 插件打印Event log 方法.html">
+            
+                <a href="idea 插件打印Event log 方法.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    idea 插件打印Event log 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Idea 插件开发常用方法.html">
+            
+                <a href="Idea 插件开发常用方法.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Idea 插件开发常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="idea插件开发.html">
+            
+                <a href="idea插件开发.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    idea插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Kotlin/">
+            
+                <a href="../Kotlin/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Kotlin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../Kotlin/Kotlin语法.html">
+            
+                <a href="../Kotlin/Kotlin语法.html">
+            
+                    
+                        <b>1.2.7.1.</b>
+                    
+                    Kotlin语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../Kotlin/run、apply、let、also、with的用法和区别.html">
+            
+                <a href="../Kotlin/run、apply、let、also、with的用法和区别.html">
+            
+                    
+                        <b>1.2.7.2.</b>
+                    
+                    run、apply、let、also、with的用法和区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Android知识点/">
+            
+                <a href="../Android知识点/">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Android知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Android知识点/获取WIFI的IP地址.html">
+            
+                <a href="../Android知识点/获取WIFI的IP地址.html">
+            
+                    
+                        <b>1.2.8.1.</b>
+                    
+                    获取WIFI的IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Android知识点/引用总结.html">
+            
+                <a href="../Android知识点/引用总结.html">
+            
+                    
+                        <b>1.2.8.2.</b>
+                    
+                    引用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Android知识点/自定义 Live Templates.html">
+            
+                <a href="../Android知识点/自定义 Live Templates.html">
+            
+                    
+                        <b>1.2.8.3.</b>
+                    
+                    自定义 Live Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../Android知识点/Android 内存泄漏总结.html">
+            
+                <a href="../Android知识点/Android 内存泄漏总结.html">
+            
+                    
+                        <b>1.2.8.4.</b>
+                    
+                    Android 内存泄漏总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../Android知识点/Android 项目搭建的一些配置.html">
+            
+                <a href="../Android知识点/Android 项目搭建的一些配置.html">
+            
+                    
+                        <b>1.2.8.5.</b>
+                    
+                    Android 项目搭建的一些配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../Android知识点/Android Handler 避免内存泄露.html">
+            
+                <a href="../Android知识点/Android Handler 避免内存泄露.html">
+            
+                    
+                        <b>1.2.8.6.</b>
+                    
+                    Android Handler 避免内存泄露
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../Android知识点/Android Studio gradle plugin 太低的解决方案.html">
+            
+                <a href="../Android知识点/Android Studio gradle plugin 太低的解决方案.html">
+            
+                    
+                        <b>1.2.8.7.</b>
+                    
+                    Android Studio gradle plugin 太低的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../Android知识点/Selector不起作用的解决方案.html">
+            
+                <a href="../Android知识点/Selector不起作用的解决方案.html">
+            
+                    
+                        <b>1.2.8.8.</b>
+                    
+                    Selector不起作用的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Tools/Index.html">
+            
+                <a href="../../Tools/Index.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Tools/adb 命令.html">
+            
+                <a href="../../Tools/adb 命令.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Adb 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Tools/Adb 不识别的解决办法.html">
+            
+                <a href="../../Tools/Adb 不识别的解决办法.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Adb 不识别的解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../Tools/Android Studio 3.0 编译报错的解决办法.html">
+            
+                <a href="../../Tools/Android Studio 3.0 编译报错的解决办法.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Android Studio 3.0 编译报错的解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../Tools/git 命令.html">
+            
+                <a href="../../Tools/git 命令.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../Tools/SVN 提交错误解决办法.html">
+            
+                <a href="../../Tools/SVN 提交错误解决办法.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    SVN 提交错误解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Java/Index.html">
+            
+                <a href="../../Java/Index.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Java/查看端口是否占用.html">
+            
+                <a href="../../Java/查看端口是否占用.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    查看端口是否占用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Java/深入理解Java String及intern.html">
+            
+                <a href="../../Java/深入理解Java String及intern.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    深入理解Java String及intern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Java/Java整形值得缓存机制.html">
+            
+                <a href="../../Java/Java整形值得缓存机制.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Java整形值得缓存机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../Java/Java值传递和引用传递.html">
+            
+                <a href="../../Java/Java值传递和引用传递.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    Java值传递和引用传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Mysql/Index.html">
+            
+                <a href="../../Mysql/Index.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Mysql/高性能MySQL笔记.html">
+            
+                <a href="../../Mysql/高性能MySQL笔记.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    高性能MySQL笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Mysql/设置MySql的慢查询.html">
+            
+                <a href="../../Mysql/设置MySql的慢查询.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    设置MySql的慢查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Mysql/数据库操作工具LitePal的使用说明.html">
+            
+                <a href="../../Mysql/数据库操作工具LitePal的使用说明.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    数据库操作工具LitePal的使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../Mysql/MySql的常用命令.html">
+            
+                <a href="../../Mysql/MySql的常用命令.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    MySql的常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >idea 插件打印Event log 方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6253;&#x5370;-event-log-&#x7684;&#x65B9;&#x5F0F;"><a name="&#x6253;&#x5370;-event-log-&#x7684;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#&#x6253;&#x5370;-event-log-&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6253;&#x5370; Event log &#x7684;&#x65B9;&#x5F0F;</h1>
+<h2 id="&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;"><a name="&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;" class="plugin-anchor" href="#&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</h2>
+<pre><code>public class EventLogger {
+    private static final String GROUP_ID = &quot;Log&quot;;//The unique group id where &quot;Event Log&quot; could use to group your messages together.
+    private static final String TITLE = &quot;Log Event Log&quot;;//The title on Balloon
+    /**
+     * Print log to &quot;Event Log&quot;
+     */
+    public static void log(String msg) {
+        Notification notification = new Notification(GROUP_ID, TITLE, msg, NotificationType.INFORMATION);//build a notification
+        //notification.hideBalloon();//didn&apos;t work
+        Notifications.Bus.notify(notification);//use the default bus to notify (application level)
+        Balloon balloon = notification.getBalloon();
+        if (balloon != null) {//fix: #20 &#x6F5C;&#x5728;&#x7684;NPE
+            balloon.hide(true);//try to hide the balloon immediately.
+        }
+    }
+}
+</code></pre><h2 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><a name="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h2>
+<p><code>EventLogger.log(&quot;String log = \&quot;adsdf \&quot;;&quot;);</code></p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x5728;Event Log&#x4E2D;&#x5C31;&#x6253;&#x5370;&#x51FA;<code>Log Event Log: String log = &quot;adsdf &quot;;</code></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fhy6kqc37nj30wm079t9u.jpg" alt=""></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; josen 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-11-13 09:33:27
+</span></footer>
+
+
+<script type="text/javascript">var className='atoc';</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Editor的使用.html" class="navigation navigation-prev " aria-label="Previous page: Editor的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Idea 插件开发常用方法.html" class="navigation navigation-next " aria-label="Next page: Idea 插件开发常用方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"idea 插件打印Event log 方法","level":"1.2.4","depth":2,"next":{"title":"Idea 插件开发常用方法","level":"1.2.5","depth":2,"path":"Android/Idea插件/Idea 插件开发常用方法.md","ref":"Android/Idea插件/Idea 插件开发常用方法.md","articles":[]},"previous":{"title":"Editor的使用","level":"1.2.3.2","depth":3,"path":"Android/Idea插件/Editor的使用.md","ref":"Android/Idea插件/Editor的使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2","atoc","toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © josen 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/qiaoshouliang/Document"},"atoc":{"addClass":true,"className":"atoc"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"qiaoshouliang/Document","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiaoshouliang/Document/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"Josen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Document","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://github.com/qiaoshouliang"}},"gitbook":"3.2.3","description":"记录自己的IT之旅"},"file":{"path":"Android/Idea插件/idea 插件打印Event log 方法.md","mtime":"2017-11-13T01:33:27.398Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-13T06:14:59.170Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

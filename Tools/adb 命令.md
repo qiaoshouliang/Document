@@ -1,5 +1,12 @@
-### adb shell procrank 产看内存
-```
+<!-- toc -->
+
+
+
+# Adb 命令
+
+### adb shell procrank 查看内存
+
+```sh
 qiaoshouliangdeMacBook-Pro:~ qiaoshouliang$ adb shell procrank
   PID       Vss      Rss      Pss      Uss  cmdline
   626   442480K   51220K   26367K   23136K  com.android.systemui
@@ -52,13 +59,29 @@ RAM: 425876K total, 52636K free, 3488K buffers, 164656K cached, 324K shmem, 3812
 ```
 其中total指的就是系统的内存大小，512M
 
+- **VSS**  Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
 
-### adb shell wm size 获取屏幕分辨率
+- **RSS**  Resident Set Size 实际使用物理内存（包含共享库占用的内存）
+- **PSS**  Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
+- **USS**  Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
 
-```
+### 获取屏幕分辨率
+
+```shell
 qiaoshouliangdeMacBook-Pro:~ qiaoshouliang$ adb shell wm size
 Physical size: 1280x800
 ```
-### adb shell am adb shell am start -n com.hismart.intercom/.StartupActivity --ei START_INTENT 1000
+### 启动一个Acitivy with extras
 
-启动一个Acitivy with extras
+```shell
+adb shell am start -n com.hismart.intercom/.StartupActivity --ei START_INTENT 1000
+```
+
+### 查看网卡eth0
+
+```Shell
+root@android:/ # ifconfig eth0
+ifconfig eth0
+eth0: ip 192.168.0.180 mask 255.255.255.0 flags [up broadcast running multicast]
+```
+

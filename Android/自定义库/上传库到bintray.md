@@ -5,7 +5,7 @@
 # 在Library目录下创建bintray.gradle文件
 ![image](https://ws3.sinaimg.cn/large/006tNc79ly1fgv9jzutroj30b70dzjs7.jpg)
 ## 文件内容如下
-```
+```java
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
@@ -84,7 +84,7 @@ bintray {
  # 2. 在项目根目录build.gradle下加入
 
 
-```
+```java
     dependencies {
     
         classpath 'com.android.tools.build:gradle:2.3.3'
@@ -100,7 +100,7 @@ bintray {
 ![image](https://ws3.sinaimg.cn/large/006tNc79ly1fgvageflmlj30t60dnmys.jpg)
 
 # 3. 在local.properties中加入如下两行，用来配置bintray的用户名的APIKey
-```
+```java
 bintray.user=josenqiao
 bintray.apikey=f1ccb3d650a6b39aeab4d4a0e1ad97f867e52f39
 ```
@@ -115,7 +115,7 @@ bintray.apikey=f1ccb3d650a6b39aeab4d4a0e1ad97f867e52f39
 ![](https://ws2.sinaimg.cn/large/006tKfTcly1fgygwg2llij30go0jc75j.jpg)
 Name需要和Pkg中的repo相同
 
-```
+```java
 pkg {
         repo = "maven"
         name = "widget" //发布到JCenter上的项目名字

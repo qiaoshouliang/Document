@@ -1,5 +1,2 @@
-### 参看网址
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/Basics/Returns-and-Jumps.html
-
+List 中扩展函数 joinToString
 
